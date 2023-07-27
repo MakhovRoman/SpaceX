@@ -1,0 +1,32 @@
+@import '../../styles/constants';
+
+.banner {
+  width: 100%;
+  height: 100vh;
+
+  max-height: 660px;
+
+  @extend %flex-justify-center;
+  align-items: flex-start;
+
+  background-color: rgba(4 9 15 / 100%);
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    // max-height: 660px;
+    background-image: url('src/assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+
+    @extend %flex-justify-center;
+    align-items: flex-start;
+  }
+
+  &__content {
+    width: $content-width;
+    height: $content-height;
+  }
+}

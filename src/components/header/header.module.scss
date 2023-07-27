@@ -1,0 +1,8 @@
+@import '../../styles/constants';
+
+.header {
+  height: $header-height;
+
+  display: flex;
+  justify-content: space-between;
+}
