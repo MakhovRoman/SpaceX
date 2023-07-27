@@ -8,6 +8,10 @@ export const Banner:React.FC = () => {
       <div className={styles.banner__wrapper}>
         <div className={styles.banner__content}>
           <Header />
+          <div className={styles.title}>
+            <h1 className={styles.title__h1}>Путешествие</h1>
+            <h3 className={styles.title__h3}>на красную планету</h3>
+          </div>
         </div>
       </div>
     </div>
