@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Banner.module.scss';
 import { Header } from '../header/Header';
+import { Title } from '../title/Title';
+import { Advantage } from '../advantage/Advantage';
 
 export const Banner:React.FC = () => {
   return (
@@ -8,9 +10,9 @@ export const Banner:React.FC = () => {
       <div className={styles.banner__wrapper}>
         <div className={styles.banner__content}>
           <Header />
-          <div className={styles.title}>
-            <h1 className={styles.title__h1}>Путешествие</h1>
-            <h3 className={styles.title__h3}>на красную планету</h3>
+          <div className={styles.banner__info}>
+            <Title />
+            <Advantage />
           </div>
         </div>
       </div>

@@ -1,0 +1,59 @@
+@import '../../styles/constants';
+
+.advantage {
+  color: rgba(255 255 255 / 100%);
+  position: relative;
+
+  left: calc((185px - 120px) / 2 - 10px);
+
+  display: grid;
+  grid-template-columns: repeat(2, 185px);
+  grid-template-rows: repeat(2, 185px);
+  grid-gap: 10px;
+
+  &__item {
+    @extend %full-size;
+    @extend %flex-justify-center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    border: 1px solid transparent;
+    border-top: 0;
+    border-left: 0;
+
+    &:hover {
+      background: linear-gradient(135deg, transparent 50%, rgba(255,255,255,0.1) 100%);
+
+      border-image-source: linear-gradient(135deg, transparent 65%, rgba(255,255,255,0.1) 100%);
+      border-image-slice: 1;
+      border-image-width: 2px;
+      // border-color: rgba(84 89 96 / 100%);
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    @include set-font-size(60px, 60px, 700);
+
+    &_hub {
+      position: relative;
+    }
+
+    &_small {
+      position: absolute;
+      bottom: 7px;
+      @include set-font-size(20px, 20px, 700);
+    }
+  }
+
+  &__subtitle {
+    @include set-font-size(18px, 18px, 100);
+    margin-bottom: 15px;
+  }
+}

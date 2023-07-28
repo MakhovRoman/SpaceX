@@ -29,27 +29,10 @@
     width: $content-width;
     height: $content-height;
   }
-}
 
-.title {
-  margin-top: 115px;
-  background: linear-gradient(to right, rgba(255 255 255 / 100%), rgba(255 63 4 / 100%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-
-  --mask: radial-gradient(385px at 755px 210px,#0000 100%,#000);
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-
-  &__h1 {
-    @include set-font-size(58px, 58px, 700);
-    text-transform: uppercase;
-    width: inherit;
-  }
-
-  &__h3 {
-    @include set-font-size(25px, 25px, 300);
-    width: inherit;
+  &__info {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
   }
 }

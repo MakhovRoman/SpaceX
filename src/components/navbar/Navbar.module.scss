@@ -22,18 +22,22 @@
     @extend %full-size;
     position: relative;
 
+    &::after {
+      content: '';
+      position: absolute;
+      width: calc(100% - 30px);
+      height: 1px;
+      background-color: transparent;
+
+      left: 15px;
+      bottom: 0;
+    }
+
     &:hover {
       color: rgba(177 177 177 / 100%);
 
       &::after {
-        content: '';
-        position: absolute;
-        width: calc(100% - 30px);
-        height: 1px;
         background-color: rgba(177 177 177 / 100%);
-
-        left: 15px;
-        bottom: 0;
       }
     }
 
