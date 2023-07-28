@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'constants';
 
 @font-face {
   font-family: 'Museo';
@@ -20,4 +21,32 @@
 
 html {
   font-family: "Museo";
+}
+
+
+
+.header {
+  height: $header-height;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+
+@media(max-width: 1440px) {
+  .header {
+    height: vw-value($header-height, 1440px);
+  }
+}
+
+@media(max-width: 420px) {
+  .header {
+    height: vw-value(50px, 400px);
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row-reverse;
+  }
 }

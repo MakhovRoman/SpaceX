@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styles from './Header.module.scss';
 
 import { Logo } from '../logo/Logo';
 import { Navbar } from '../navbar/Navbar';
@@ -16,7 +15,7 @@ export const Header:React.FC = () => {
   }
 
   return (
-    <header className={styles.header}>
+    <header className='header'>
       <Logo />
       {isScreenSm ? <Burger open={handleBurgerOpen} /> : <Navbar />}
       {isScreenSm && <Modal open={isBurgerOpen}/>}
