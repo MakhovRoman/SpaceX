@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Burger.module.scss';
+import styles from './BurgerStyles.module.scss';
 import clsx from 'clsx';
 
 type Props = {

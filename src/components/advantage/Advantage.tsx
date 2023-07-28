@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Advantage.module.scss';
+import styles from './AdvantageStyles.module.scss';
 
 export const Advantage:React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './modal.module.scss';
+import styles from './ModalStyles.module.scss';
 import { Navbar } from '../navbar/Navbar';
 import clsx from 'clsx';
 

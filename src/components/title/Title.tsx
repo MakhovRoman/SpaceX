@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Title.module.scss';
+import styles from './TitleSrtyles.module.scss';
 import clsx from 'clsx';
 import { Line } from '../line/Line';
 import { useResize } from '../../hook/useResize';
