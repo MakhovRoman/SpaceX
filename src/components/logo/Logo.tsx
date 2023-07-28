@@ -10,7 +10,7 @@ export const Logo:React.FC = () => {
         <span className={ clsx(styles.logo__corner_topright, styles.logo__corner) }></span>
         <span className={ clsx(styles.logo__corner_botleft, styles.logo__corner) }></span>
         <span className={ clsx(styles.logo__corner_botright, styles.logo__corner) }></span>
-        <img src="./src/assets/logo.png" alt="SpaceX" />
+        <img src="../../assets/logo.png" alt="SpaceX" />
       </div>
     </a>
   )
