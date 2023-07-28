@@ -1,8 +1,7 @@
-FROM ubuntu:latest
-FROM node:18.7.0
+FROM ubuntu:22.10
+FROM node:18.12.0
 WORKDIR /app
 COPY . .
-RUN apt update && apt install -y nodejs && apt install -y npm
 RUN npm install && npm run build
 EXPOSE 3000
 CMD ["npm", "run", "start"]
