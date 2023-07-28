@@ -23,3 +23,22 @@
     transform: skew(-40deg);
   }
 }
+
+
+@media(max-width: 1200px) {
+  .line {
+    bottom: -25px;
+    right: -160px;
+    width: 275px;
+    height: 40px;
+  }
+}
+
+@media(max-width: 960px) {
+  .line {
+    bottom: -40px;
+    right: -123px;
+    width: 260px;
+    height: 42px;
+  }
+}

@@ -43,3 +43,75 @@
 
   }
 }
+
+@media(max-width: 1440px) {
+  .nav {
+    &__item {
+      @include set-font-size(vw-value(16px, 1440px), vw-value(22px, 1440px));
+    }
+
+    &__link {
+      padding: vw-value(15px, 1440px);
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .nav {
+    &__item {
+      @include set-font-size(15px, 15px);
+    }
+
+    &__link {
+      padding: vw-value(15px, 1200px);
+    }
+  }
+}
+
+@media(max-width: 960px) {
+  .nav {
+    &__item {
+      @include set-font-size(14px, 14px);
+    }
+
+    &__link {
+      padding: vw-value(10px, 1200px);
+    }
+  }
+}
+
+
+@media(max-width: 420px) {
+  .nav {
+    margin-top: 70px;
+    width: 90%;
+    margin-left: auto;
+
+    justify-content: flex-start;
+
+    &__list {
+
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &__item {
+      font-size: 20px;
+      padding: 10px 0;
+
+      & + & {
+        margin-top: 20px;
+      }
+    }
+
+    &__link {
+      width: fit-content;
+
+      &::after {
+        width: 100%;
+        left: 0;
+        bottom: -10px;
+      }
+    }
+  }
+}

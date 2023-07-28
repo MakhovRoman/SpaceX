@@ -2,8 +2,11 @@ import React from 'react';
 import styles from './Title.module.scss';
 import clsx from 'clsx';
 import { Line } from '../line/Line';
+import { useResize } from '../../hook/useResize';
 
 export const Title:React.FC = () => {
+  const {isScreenSm} = useResize();
+
   return (
     <div className={styles.title}>
       <div className={clsx(styles.title__content, styles.title__text)}>
@@ -19,7 +22,7 @@ export const Title:React.FC = () => {
           </div>
         </a>
       </div>
-      <Line />
+      {!isScreenSm && <Line />}
     </div>
   )
 }

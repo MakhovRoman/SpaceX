@@ -1,7 +1,7 @@
 @import '../../styles/constants';
 
 .title {
-  margin-top: calc(115px - 38px);
+  margin-top: 77px;
   position: relative;
 
   &__text {
@@ -100,6 +100,125 @@
         bottom: 4px;
         left: -4px;
       }
+    }
+
+    &__link {
+      width: vw-value(180px, $content-max-width);
+      height: vw-value(35px, $content-max-width);
+    }
+  }
+}
+
+@media(max-width: 1440px) {
+  .title {
+    margin-top: vw-value(77px, 1440px);
+
+    &__text {
+      --mask: radial-gradient(26.736vw at 52.43vw 14.58vw,#0000 100%,#000);
+    }
+
+    &__content {
+      & + & {
+        margin-top: vw-value(87px, 1440px);
+      }
+    }
+
+    &__h1 {
+      @include set-font-size(4.03vw, 4.03vw, 700);
+    }
+
+    &__h3 {
+      @include set-font-size(1.736vw, 1.736vw, 300);
+    }
+  }
+}
+
+
+@media(max-width: 1350px) {
+  .title {
+    &__text {
+      --mask: radial-gradient(26.736vw at 52.4vw 14.58vw,#0000 100%,#000);
+    }
+  }
+}
+
+
+@media(max-width: 1200px) {
+  .title {
+    &__text {
+      --mask: radial-gradient(31vw at 53vw 15.2vw,#0000 100%,#000);
+    }
+
+    &__h1 {
+      @include set-font-size(3.5vw, 3.5vw, 700);
+    }
+
+    &__h3 {
+      @include set-font-size(1.25vw, 1.25vw, 300);
+    }
+
+    &__content {
+      & + & {
+        margin-top: vw-value(200px, 1200px);
+      }
+    }
+  }
+}
+
+@media(max-width: 960px) {
+  .title {
+    &__h3 {
+      @include set-font-size(1.4vw, 1.4vw, 300);
+    }
+
+    &__content {
+      & + & {
+        margin-top: vw-value(135px, 960px);
+      }
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .title {
+    &__content {
+      margin: 0 auto;
+      position: relative;
+
+    }
+
+    &__text {
+      -webkit-mask: unset;
+      mask: unset;
+    }
+
+    &__h1 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__h3 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &__link {
+      position: absolute;
+      bottom: -60vh;
+      transform: translateX(-50%);
+      left: 50%;
+
+      font-size: 20px;
+      line-height: 20px;
+
+      width: 250px;
+      height: 50px;
+    }
+  }
+
+  .border {
+    & &__corner {
+      box-shadow: 0px 0px 3px 1px rgba(255 255 255 / 100);
     }
   }
 }

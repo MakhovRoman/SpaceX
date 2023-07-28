@@ -1,0 +1,59 @@
+@import '../../styles/constants';
+
+.burger {
+  width: 48px;
+  height: 24px;
+
+  z-index: 100;
+
+  padding: 5px;
+
+  @extend %flex-justify-center;
+  align-items: center;
+
+  &__button {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: 0.3s 0.3s;
+
+    transform-origin: center;
+
+    &::after, &::before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      background-color: white;
+      transition: top 0.3s 0.3s, transform 0.3s;
+      transform-origin: center;
+    }
+
+    &::before {
+      top: -$burgerGap;
+    }
+
+    &::after {
+      bottom: -$burgerGap;
+    }
+
+    &_active {
+      background-color: transparent;
+      transition: 0.1s 0.3s;
+
+      &::after, &::before {
+        top: 0;
+        transition: top 0.3s, transform 0.3s 0.3s;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

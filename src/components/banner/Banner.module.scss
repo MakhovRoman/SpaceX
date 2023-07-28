@@ -18,7 +18,7 @@
     // max-height: 660px;
     background-image: url('src/assets/background.jpg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center center;
 
     @extend %flex-justify-center;
@@ -34,5 +34,44 @@
     margin-top: 38px;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+
+@media(max-width: 1440px) {
+  .banner {
+    &__content {
+      width: vw-value($content-width, 1440px);
+      height: vw-value($content-height, 1440px);
+    }
+
+    &__info {
+      margin-top: vw-value(38px, 1440px);
+    }
+  }
+}
+
+
+@media(max-width: 1200px) {
+  .banner {
+    max-height: unset;
+
+    &__content  {
+      height: fit-content;
+    }
+
+    &__info {
+      margin-top: vw-value(90px, 1200px);
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .banner {
+    &__info {
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
