@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Header.module.scss'
+import styles from './Header.module.scss';
 
 import { Logo } from '../logo/Logo';
 import { Navbar } from '../navbar/Navbar';

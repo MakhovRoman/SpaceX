@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './Logo.module.scss';
 import clsx from 'clsx';
 
+import logo from '../../assets/logo.png';
+
 export const Logo:React.FC = () => {
   return (
     <a href="#" className={styles.link}>
@@ -10,7 +12,7 @@ export const Logo:React.FC = () => {
         <span className={ clsx(styles.logo__corner_topright, styles.logo__corner) }></span>
         <span className={ clsx(styles.logo__corner_botleft, styles.logo__corner) }></span>
         <span className={ clsx(styles.logo__corner_botright, styles.logo__corner) }></span>
-        <img src="../../assets/logo.png" alt="SpaceX" />
+        <img src={logo} alt="SpaceX" />
       </div>
     </a>
   )
