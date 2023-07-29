@@ -1,27 +1,49 @@
-# React + TypeScript + Vite
+# SpaceX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Верстка страницы по макету из Photoshop в рамках выполнения тестового задания
 
-Currently, two official plugins are available:
+![image](https://github.com/MakhovRoman/SpaceX/assets/70774476/0554e495-beb8-4b59-a1d7-1b34de4a4c26)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Реализована верстка по следующим breakpoint:
+- 1920px
+- 1440px
+- 1200px
+- 960px
+- 400px
 
-## Expanding the ESLint configuration
+## Deploy
+  
+[![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)]([https://todo-8om2.onrender.com/](https://spacex-3wr7.onrender.com/)https://spacex-3wr7.onrender.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Scripts
 
-- Configure the top-level `parserOptions` property like this:
+Запуск проекта:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+npm install
+npm run start
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Запуск в режиме разработки:
+
+```
+npm run dev
+```
+
+Сборка проекта:
+
+```
+npm run build
+```
+
+## TODO
+
+- [ ] Сделать рефактор компонентов и провести декомпозицию
+
+- [ ] Добавть тесты
+
+- [ ] Добавить резиновую верстку
+
+## Stack
+
+![My Skills](https://skillicons.dev/icons?i=html,sass,js,ts,react,docker,vite)
